@@ -9,7 +9,9 @@ bcelev_df = as.data.frame(bc_elev, xy = TRUE)
 colnames(bcelev_df)[3] = "z"
 
 # ggplot option
-bcplot = ggplot(bcelev_df) + geom_raster(aes(x = x, y = y, fill = z)) + scale_fill_viridis_c(option = "D")
+bcplot = ggplot(bcelev_df) + geom_raster(aes(x = x, y = y, fill = z)) + scale_fill_viridis_c("Elevation",option = "D") +
+  ggtitle("British Columbia Relief Map")
+  
 plot_gg(bcplot, width = 4, height = 4, scale = 150, multicore = TRUE, zoom = 0.45)
   
 bcmat = raster_to_matrix(bc_elev)
