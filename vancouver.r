@@ -1,12 +1,12 @@
 
-
-loadzip = tempfile()
-#download.file("https://tylermw.com/data/dem_01.tif.zip", loadzip)
+library(raster)
+library(sp)
+library(rayshader)
+library(tidyverse)
 localtif = raster::raster("DEM_BC.tif")
-unlink(loadzip)
 
 elmat = raster_to_matrix(localtif)
-elmat_red = elmat[1000:5000, 3500:5996] ### Reducing the matrix
+elmat_red = elmat[1000:5000, 3500:5996] # Reducing the matrix
 elmat_exp = elmat[1300:4000, 3700:5500]
 
 elmat_exp %>% sphere_shade(texture = create_texture("#fff673","#55967a","#8fb28a","#55967a","#FFE5CC")) %>%
