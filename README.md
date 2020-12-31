@@ -4,4 +4,8 @@ Raised-relief maps of different locations around the world. Digital elevation mo
 
 ## Greater Vancouver, BC, Canada
 
-<img src="figures/AnimatedGraph.gif" ></img>
+<img src="figures/vancouver.gif" ></img>
+
+## South Rim, Grand Canyon, AZ, USA
+
+<img src="figures/grandcanyon.gif" ></img>
