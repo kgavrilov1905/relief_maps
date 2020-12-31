@@ -59,7 +59,12 @@ plot_map(van_rgb_array)
 van_rgb_final = rescale(van_rgb_contrast_stretch, to = c(0,1))
 plot_map(van_rgb_contrast)
 
-plot_3d(van_rgb_array, van_elmat, windowsize = c(1100,900), zscale = 15, zoom = 0.5)
+plot_3d(van_rgb_array, van_elmat, windowsize = c(1100,900), zscale = 15, zoom = 0.5, theta = -80, phi = 20,
+        background = "#f8fff2")
+
+play3d(spin3d(axis = c(0, 1, 0), rpm = -2), duration = 15)
+
+movie3d(movie = "vancouver", spin3d(axis = c(0, 1, 0), rpm = -2), duration = 15, dir = "~/Desktop", type = "gif", clean = TRUE)
 
 
 
