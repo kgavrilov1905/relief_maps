@@ -9,3 +9,5 @@ Raised-relief maps of different locations around the world. Digital elevation mo
 ## South Rim, Grand Canyon, AZ, USA
 
 <img src="figures/grandcanyon.gif" ></img>
+
+<img src="figures/grandcanyon_water.gif" ></img>
